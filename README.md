@@ -1,4 +1,4 @@
-# RCD-Smart-Home-v-0.1
+﻿# RCD-Smart-Home-v-0.1
 Project Python arduino by Julius Quast and Jonas Zoellner
 
 The Doxygen file of the arduino part is in the wifi_setup folder.
@@ -8,7 +8,7 @@ The Doxygen file of Python are in Doxygen Python Files.rar
 
 User Guide :
 
-Step 1 : Verbinden sie den Aufbau mit einer Stromquelle (Powerbank,Batterie,Latop,etc).
+Step 1 : Verbinden sie den Aufbau mit einer Stromquelle (Powerbank,Batterie,Latop,etc). Der Laser wird unabhängig angeschlossen und auf den Fotowiderstand gerichtet.
 
 Step 2 : Starten sie das Python Programm (Server + Application 2.0) und warten sie, bis der Server onlinen ist. Im Command Fenster sollte stehen Suche clients  Your IP : 3030
 
