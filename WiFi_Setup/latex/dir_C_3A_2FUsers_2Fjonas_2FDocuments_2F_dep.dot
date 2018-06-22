@@ -1,0 +1,13 @@
+digraph G {
+  compound=true
+  node [ fontsize=10, fontname="Helvetica"];
+  edge [ labelfontsize=9, labelfontname="Helvetica"];
+  subgraph clusterdir_C_3A_2FUsers_2Fjonas_2F {
+    graph [ bgcolor="#ddddee", pencolor="black", label="jonas" fontname="Helvetica", fontsize=10, URL="dir_C_3A_2FUsers_2Fjonas_2F.html"]
+  subgraph clusterdir_C_3A_2FUsers_2Fjonas_2FDocuments_2F {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_C_3A_2FUsers_2Fjonas_2FDocuments_2F.html"];
+    dir_C_3A_2FUsers_2Fjonas_2FDocuments_2F [shape=plaintext label="Documents"];
+    dir_C_3A_2FUsers_2Fjonas_2FDocuments_2FGitHub_2F [shape=box label="GitHub" color="red" fillcolor="white" style="filled" URL="dir_C_3A_2FUsers_2Fjonas_2FDocuments_2FGitHub_2F.html"];
+  }
+  }
+}

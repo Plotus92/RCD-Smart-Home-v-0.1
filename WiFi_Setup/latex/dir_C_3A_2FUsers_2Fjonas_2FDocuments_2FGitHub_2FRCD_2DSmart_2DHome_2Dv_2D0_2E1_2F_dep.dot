@@ -1,0 +1,13 @@
+digraph G {
+  compound=true
+  node [ fontsize=10, fontname="Helvetica"];
+  edge [ labelfontsize=9, labelfontname="Helvetica"];
+  subgraph clusterdir_C_3A_2FUsers_2Fjonas_2FDocuments_2FGitHub_2F {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GitHub" fontname="Helvetica", fontsize=10, URL="dir_C_3A_2FUsers_2Fjonas_2FDocuments_2FGitHub_2F.html"]
+  subgraph clusterdir_C_3A_2FUsers_2Fjonas_2FDocuments_2FGitHub_2FRCD_2DSmart_2DHome_2Dv_2D0_2E1_2F {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_C_3A_2FUsers_2Fjonas_2FDocuments_2FGitHub_2FRCD_2DSmart_2DHome_2Dv_2D0_2E1_2F.html"];
+    dir_C_3A_2FUsers_2Fjonas_2FDocuments_2FGitHub_2FRCD_2DSmart_2DHome_2Dv_2D0_2E1_2F [shape=plaintext label="RCD-Smart-Home-v-0.1"];
+    dir_C_3A_2FUsers_2Fjonas_2FDocuments_2FGitHub_2FRCD_2DSmart_2DHome_2Dv_2D0_2E1_2FWiFi_5FSetup_2F [shape=box label="WiFi_Setup" color="black" fillcolor="white" style="filled" URL="dir_C_3A_2FUsers_2Fjonas_2FDocuments_2FGitHub_2FRCD_2DSmart_2DHome_2Dv_2D0_2E1_2FWiFi_5FSetup_2F.html"];
+  }
+  }
+}

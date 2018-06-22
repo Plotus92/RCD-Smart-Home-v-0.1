@@ -1,0 +1,9 @@
+digraph G {
+  compound=true
+  node [ fontsize=10, fontname="Helvetica"];
+  edge [ labelfontsize=9, labelfontname="Helvetica"];
+  subgraph clusterdir_C_3A_2FUsers_2Fjonas_2FDocuments_2FGitHub_2FRCD_2DSmart_2DHome_2Dv_2D0_2E1_2F {
+    graph [ bgcolor="#ddddee", pencolor="black", label="RCD-Smart-Home-v-0.1" fontname="Helvetica", fontsize=10, URL="dir_C_3A_2FUsers_2Fjonas_2FDocuments_2FGitHub_2FRCD_2DSmart_2DHome_2Dv_2D0_2E1_2F.html"]
+  dir_C_3A_2FUsers_2Fjonas_2FDocuments_2FGitHub_2FRCD_2DSmart_2DHome_2Dv_2D0_2E1_2FWiFi_5FSetup_2F [shape=box, label="WiFi_Setup", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_C_3A_2FUsers_2Fjonas_2FDocuments_2FGitHub_2FRCD_2DSmart_2DHome_2Dv_2D0_2E1_2FWiFi_5FSetup_2F.html"];
+  }
+}

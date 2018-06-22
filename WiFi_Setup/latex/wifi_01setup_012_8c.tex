@@ -1,0 +1,208 @@
+\section{C:/Users/jonas/Documents/Git\-Hub/RCD-Smart-Home-v-0.1/Wi\-Fi\_\-Setup/wifi setup 2.c File Reference}
+\label{wifi_01setup_012_8c}\index{C:/Users/jonas/Documents/GitHub/RCD-Smart-Home-v-0.1/WiFi_Setup/wifi setup 2.c@{C:/Users/jonas/Documents/GitHub/RCD-Smart-Home-v-0.1/WiFi\_\-Setup/wifi setup 2.c}}
+{\tt \#include $<$Software\-Serial.h$>$}\par
+
+
+Include dependency graph for wifi setup 2.c:\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+Software\-Serial {\bf esp8266} (11, 12)
+\item 
+void {\bf setup} ()
+\item 
+void {\bf wifi} ()
+\item 
+void {\bf loop} ()
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+int {\bf sensor\-Pin} = A0
+\begin{CompactList}\small\item\em Photoresistor Pin. \item\end{CompactList}\item 
+int {\bf sensor\-Value} = 0
+\begin{CompactList}\small\item\em Storing Sensor Value. \item\end{CompactList}\item 
+int {\bf buttpin} = 4
+\begin{CompactList}\small\item\em Button pin. \item\end{CompactList}\item 
+int {\bf button\-State}
+\begin{CompactList}\small\item\em Buttonstate. \item\end{CompactList}\item 
+int {\bf pressed} = 0
+\begin{CompactList}\small\item\em pressed state \item\end{CompactList}\item 
+int {\bf led\-Pin} = 3
+\begin{CompactList}\small\item\em LEE pin. \item\end{CompactList}\item 
+String {\bf Wlan} = \char`\"{}Web\-Server\char`\"{}
+\begin{CompactList}\small\item\em wifi name \item\end{CompactList}\item 
+String {\bf Wlan\-P} = \char`\"{}1234567890\char`\"{}
+\begin{CompactList}\small\item\em wifi password \item\end{CompactList}\item 
+String {\bf IP} = \char`\"{}192.168.4.2\char`\"{}
+\begin{CompactList}\small\item\em ip address \item\end{CompactList}\item 
+String {\bf Port} = \char`\"{}3030\char`\"{}
+\begin{CompactList}\small\item\em port \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\index{wifi setup 2.c@{wifi setup 2.c}!esp8266@{esp8266}}
+\index{esp8266@{esp8266}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Software\-Serial esp8266 (11, 12)}\label{wifi_01setup_012_8c_84acb83d0d23cbcd7a6e88593eaabb9b}
+
+
+
+
+Referenced by loop(), setup(), and wifi().\index{wifi setup 2.c@{wifi setup 2.c}!loop@{loop}}
+\index{loop@{loop}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void loop ()}\label{wifi_01setup_012_8c_64e0511a8547ef3fad470c7f04ab4b22}
+
+
+Wait for Server to get started
+
+connect to server
+
+reset buttonstate
+
+read the value from the sensor
+
+switches LED on or off depending on input from the server 
+
+Definition at line 63 of file wifi setup 2.c.
+
+References button\-State, buttpin, esp8266(), IP, led\-Pin, Port, pressed, sensor\-Pin, sensor\-Value, and wifi().
+
+Here is the call graph for this function:\index{wifi setup 2.c@{wifi setup 2.c}!setup@{setup}}
+\index{setup@{setup}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setup ()}\label{wifi_01setup_012_8c_415266b005d267e801176f27c0434a50}
+
+
+Setup
+
+Setup 2 
+
+Definition at line 26 of file wifi setup 2.c.
+
+References buttpin, esp8266(), led\-Pin, sensor\-Pin, Wlan, and Wlan\-P.
+
+Here is the call graph for this function:\index{wifi setup 2.c@{wifi setup 2.c}!wifi@{wifi}}
+\index{wifi@{wifi}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void wifi ()}\label{wifi_01setup_012_8c_d0e9a40529b04928cb2dbd0a723a232f}
+
+
+wifi setup 
+
+Definition at line 56 of file wifi setup 2.c.
+
+References esp8266().
+
+Referenced by loop().
+
+Here is the call graph for this function:
+
+\subsection{Variable Documentation}
+\index{wifi setup 2.c@{wifi setup 2.c}!buttonState@{buttonState}}
+\index{buttonState@{buttonState}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf button\-State}}\label{wifi_01setup_012_8c_1a3b30f592b65e3d67bb202a9b4e5bd5}
+
+
+Buttonstate. 
+
+
+
+Definition at line 12 of file wifi setup 2.c.
+
+Referenced by loop().\index{wifi setup 2.c@{wifi setup 2.c}!buttpin@{buttpin}}
+\index{buttpin@{buttpin}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf buttpin} = 4}\label{wifi_01setup_012_8c_f1d86e2438724cdc7cde89b4fa5e364a}
+
+
+Button pin. 
+
+
+
+Definition at line 10 of file wifi setup 2.c.
+
+Referenced by loop(), and setup().\index{wifi setup 2.c@{wifi setup 2.c}!IP@{IP}}
+\index{IP@{IP}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}String {\bf IP} = \char`\"{}192.168.4.2\char`\"{}}\label{wifi_01setup_012_8c_a12a3079e14ced46e69ba52b8a90b21a}
+
+
+ip address 
+
+
+
+Definition at line 22 of file wifi setup 2.c.
+
+Referenced by loop().\index{wifi setup 2.c@{wifi setup 2.c}!ledPin@{ledPin}}
+\index{ledPin@{ledPin}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf led\-Pin} = 3}\label{wifi_01setup_012_8c_08571f2409ba4af9200c2c471a9e6e1d}
+
+
+LEE pin. 
+
+
+
+Definition at line 16 of file wifi setup 2.c.
+
+Referenced by loop(), and setup().\index{wifi setup 2.c@{wifi setup 2.c}!Port@{Port}}
+\index{Port@{Port}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}String {\bf Port} = \char`\"{}3030\char`\"{}}\label{wifi_01setup_012_8c_60aaf44d4b562252c04db7f98497e9aa}
+
+
+port 
+
+
+
+Definition at line 24 of file wifi setup 2.c.
+
+Referenced by loop().\index{wifi setup 2.c@{wifi setup 2.c}!pressed@{pressed}}
+\index{pressed@{pressed}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf pressed} = 0}\label{wifi_01setup_012_8c_6375592a2d987630e9bf9afd9e7de973}
+
+
+pressed state 
+
+
+
+Definition at line 14 of file wifi setup 2.c.
+
+Referenced by loop().\index{wifi setup 2.c@{wifi setup 2.c}!sensorPin@{sensorPin}}
+\index{sensorPin@{sensorPin}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf sensor\-Pin} = A0}\label{wifi_01setup_012_8c_6aec6a9612b22e1cec48b35427ba4a47}
+
+
+Photoresistor Pin. 
+
+
+
+Definition at line 6 of file wifi setup 2.c.
+
+Referenced by loop(), and setup().\index{wifi setup 2.c@{wifi setup 2.c}!sensorValue@{sensorValue}}
+\index{sensorValue@{sensorValue}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf sensor\-Value} = 0}\label{wifi_01setup_012_8c_6ad49bffab166dc28073d341bf3caacb}
+
+
+Storing Sensor Value. 
+
+
+
+Definition at line 8 of file wifi setup 2.c.
+
+Referenced by loop().\index{wifi setup 2.c@{wifi setup 2.c}!Wlan@{Wlan}}
+\index{Wlan@{Wlan}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}String {\bf Wlan} = \char`\"{}Web\-Server\char`\"{}}\label{wifi_01setup_012_8c_60409476e8b89d8184cb4a12478eb2d8}
+
+
+wifi name 
+
+
+
+Definition at line 18 of file wifi setup 2.c.
+
+Referenced by setup().\index{wifi setup 2.c@{wifi setup 2.c}!WlanP@{WlanP}}
+\index{WlanP@{WlanP}!wifi setup 2.c@{wifi setup 2.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}String {\bf Wlan\-P} = \char`\"{}1234567890\char`\"{}}\label{wifi_01setup_012_8c_8f40303d7f1ad878da7f726d975bbf3d}
+
+
+wifi password 
+
+
+
+Definition at line 20 of file wifi setup 2.c.
+
+Referenced by setup().

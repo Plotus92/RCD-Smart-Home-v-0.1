@@ -10,6 +10,7 @@ Setup: AT+CWMODE_CUR=2
 
 Setup 2: AT+CWSAP_CUR="Web Server","1234567890",5,3
 Connection : AT+CIPSTART="TCP","192.168.4.2",3030
+send data : AT+CIPSEND=4
 
 
 Extra Commands : 
