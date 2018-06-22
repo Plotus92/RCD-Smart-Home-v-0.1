@@ -1,14 +1,22 @@
 import threading
-
-#Server Thread
 import socket
+#Server Thread 
+##In dieser Funktion wird der Server aufgebaut.
+#@param A Startstunde
+#@param B Startminute
+#@param C Endstunde
+#@param D Endminute
+#@param H Aktuelle Stunde
+#@param M Aktuelle Minute
+#
+##Die Parameter befinden sich in der while Schleife, damit sie sich dauerhaft aktualisieren und sich die Funktion nicht nur auf die am Anfang eingegebenen Werte bezieht.
 def Server_Function():
 	server = socket.socket(socket.AF_INET,socket.SOCK_STREAM)		
 	ip = socket.gethostbyname(socket.gethostname())					#IP des Servers wird direkt vom Host bezogen.
 	port = 3030
 	address = (ip,port)
 	server.bind(address)
-	server.listen(1)
+	server.listen(1)												#Der Server kann maximal 1 aktive Verbindung haben
 	print (" Suche clients ",ip,":",port)
 	client,addr = server.accept()
 	print (" Verbindung mit Smart Home ",addr[0],":",addr[1])
@@ -85,11 +93,15 @@ def Server_Function():
 				break
 		else:
 				client.send(b"Invalid data")
-				print (" Processing Invalid data.\n[*] Replay sent ")
+				print (" Verarbeite ungültige Daten.\n[*] Antwort gesendet ")
+				
+##Hier wird der Server Thread gestartet
 t = threading.Thread(target = Server_Function, name = 'Server Thread', args =())
 
 t.start()
-#Setup for Server Function(Time)
+##Diese Funktion übermittel die aktuelle Uhrzeit + Minute und returned diese, damit andere Funktionen sich auf diese Werte beziehen können.
+#@param H Aktuelle Stunde
+#@param M Aktuelle Minute
 def Uhrzeit():												#Funktion übermittelt die aktuelle Stunde + Minute.
 	H = time.strftime("%H")
 	M = time.strftime("%M")
@@ -106,6 +118,7 @@ root.geometry("400x200")
 root.title("Light v.1")
 root.resizable(False, False)
 #Variable Section
+##Background
 BG = Frame(root,width=400,height=200)
 BG.pack(side=TOP)
 Panel1 = Frame(root,width=200,height=100)
@@ -116,7 +129,9 @@ Info.grid(row=0,column=0)
 time_one=''
 Info_Time=Label(BG,font=('arial',20,'bold'),fg="green",bd=10,anchor='w')
 Info_Time.grid(row=1,column=0)
+## Time_one muss leer sein, da sonst die Funktion update_Time nicht funktionieren würde
 time_one=''
+##Diese Funktion erzeugt die im GUI zusehende Zeitangabe. 
 def update_Time():												#Funktion für die UHR im GUI. Zeit wird alle 200ms aktualisiert.
 	global time_one
 	time_two=time.strftime('%H:%M:%S')
@@ -142,6 +157,11 @@ Text2=Label(Panel1,text="Bis").grid(row=2,column=0)
 Text_Min=Label(Panel1,text="Stunden").grid(row=0,column=1)
 Text_Min=Label(Panel1,text="Minuten").grid(row=0,column=2)
 #Button Section	
+##Diese Funktion schaut welche Eingaben der User in die Displays getätigt hat und returned diese, damit sich andere Funktionen darauf beziehen können.
+#@param A Startstunde
+#@param B Startminute
+#@param C Endstunde
+#@param D Endminute
 def getInput():														#Funktion um die eingebenen Werte auszulesen.
 	A=int(Display1.get())
 	B=int(Display2.get())
@@ -151,6 +171,7 @@ def getInput():														#Funktion um die eingebenen Werte auszulesen.
 	operator=[A,B,C,D]
 	return A,B,C,D
 #b1= Button(BG,text="Reset",command=getInput).grid(row=3)
+##Eine Debug Funktion
 def Test():															#Test Funktion 
 	A,B,C,D = getInput()
 	print(A,B,C,D)
