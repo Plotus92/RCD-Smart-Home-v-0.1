@@ -12,7 +12,7 @@ Step 1 : Verbinden sie den Aufbau mit einer Stromquelle (Powerbank,Batterie,Lato
 
 Step 2 : Starten sie das Python Programm (Server + Application 2.0) und warten sie, bis der Server onlinen ist. Im Command Fenster sollte stehen Suche clients  Your IP : 3030
 
-Step 3 : Drücken sie den Button im Arduino Versuchsaufbau. Nun sollte in ihrer Python Comnmand Fenster stehen, dass sich ein Client verbunden hat.
+Step 3 : Drücken sie den Button im Arduino Versuchsaufbau. Nun sollte in ihrerm Python Command Fenster stehen, dass sich ein Client verbunden hat.
 
 Step 4 : Wenn nun die Lichtschranke unterbrochen wird, sendet der Arduino eine Variable an den Python Server und dieser reagiert entsprechend darauf und sendet an den Arduino zurück. Dieser führt dann etwas aus. In userem Falle wird ein Licht an oder aus gemacht.
 
