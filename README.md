@@ -10,7 +10,7 @@ User Guide :
 
 Step 1 : Verbinden sie den Aufbau mit einer Stromquelle (Powerbank,Batterie,Latop,etc). Der Laser wird unabhängig angeschlossen und auf den Fotowiderstand gerichtet.
 
-Step 2 : Starten sie das Python Programm (Server + Application 2.0) und warten sie, bis der Server onlinen ist. Im Command Fenster sollte stehen Suche clients  Your IP : 3030
+Step 2 : Starten sie das Python Programm (Server + Application 2.0) und warten sie, bis der Server onlinen ist. Im Command Fenster sollte stehen Suche clients  Your IP : 3030. In der GUI Application legt man nun fest, von wann bis wann das Licht angehen soll, wenn der Laser unterbochen wird.
 
 Step 3 : Drücken sie den Button im Arduino Versuchsaufbau. Nun sollte in ihrerm Python Command Fenster stehen, dass sich ein Client verbunden hat.
 
